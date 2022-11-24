@@ -1,0 +1,31 @@
+:root {
+    --bg-color: #ffffff;
+    --main-light: #23b1ae;
+    --main-dark: #2a2e40;
+    --dark-blue: #4154b2
+}
+
+.logo {
+    height: 100px;
+}
+
+.logo-container, .logo-mobile-container {
+    padding: 10px 15px;
+}
+
+.logo-mobile-container {
+    display: none;
+}
+
+.logo-mobile {
+    height: 100px;
+}
+
+@media only screen and (max-width: 650px) {
+    .logo-container {
+        display: none;
+    }
+    .logo-mobile-container {
+        display: block;
+    }
+}
