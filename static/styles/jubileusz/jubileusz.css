@@ -1,0 +1,35 @@
+@import "./logo.css";
+@import "./menu.css";
+
+:root {
+    --bg-color: #ffffff;
+    --main-light: #23b1ae;
+    --main-dark: #2a2e40;
+    --dark-blue: #4154b2
+}
+
+html, body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-dark);
+    justify-content: space-between;
+}

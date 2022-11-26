@@ -1,12 +1,5 @@
-:root {
-    --bg-color: #ffffff;
-    --main-light: #23b1ae;
-    --main-dark: #2a2e40;
-    --dark-blue: #4154b2
-}
-
 .logo {
-    height: 100px;
+    height: 80px;
 }
 
 .logo-container, .logo-mobile-container {

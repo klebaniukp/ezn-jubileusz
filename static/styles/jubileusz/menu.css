@@ -1,0 +1,74 @@
+@import './jubileusz.css';
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  color: white;
+}
+
+.menu-item-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.menu-item {
+  line-height: 60px;
+  padding: 0 10px;
+  cursor: pointer;
+  position: relative;
+  text-decoration: none;
+}
+
+/* color: var(--main-light); */
+.menu-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  border: 1px solid white;
+  animation: appear 0.2s linear;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  border: 0px solid white;
+  animation: disappear 0.2s linear;
+}
+
+@keyframes appear {
+  from {
+    left: 50%;
+    right: 50%;
+    border: 0px;
+  }
+  to {
+    left: 25%;
+    right: 25%;
+    border: 1px solid white;
+  }
+}
+
+@keyframes disappear {
+  from {
+    left: 25%;
+    right: 25%;
+    border: 1px solid white;
+  }
+  to {
+    left: 50%;
+    right: 50%;
+    border: 0px;
+  }
+}
+
+.nav-element {
+  margin: 0 30px;
+}
