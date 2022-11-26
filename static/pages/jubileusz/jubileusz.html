@@ -1,46 +1,57 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/static/styles/jubileusz/jubileusz.css" />
-    <title>Jubileusz</title>
-  </head>
-  <body>
-    <!-- Część z logiem, nawigacją i sliderem -->
-    <header>
-      <!-- navbar -->
-      <nav class="navbar">
-        <div class="logo-container nav-element">
-          <img src="/images/ezn-logo2048x699.png" alt="logo ezn" class="logo" />
-        </div>
-        <!-- mobile -->
-        <div class="logo-mobile-container">
-          <img src="/images/ezn-logo1160x699.png" alt="logo ezn" class="logo-mobile" />
-        </div>
-        <ul class="menu nav-element">
-          <li class="menu-item-container">
-            <p class="menu-item">
-              Aktualności
-            </p>
-          </li>
-          <!-- <li class="menu-item">Galeria zdjęć</li>
-          <li class="menu-item">Wspomnienia o szkole</li>
-          <li class="menu-item">Pamiątkowe zdjęcia</li>
-          <li class="menu-item">Kontakt</li> -->
-        </ul>
-      </nav>
-      <section class="slider-container">
-        <!-- slider  -->
-        <div class="slider"></div>
-      </section>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/images/favicon/favicon.ico" type="image/x-icon" />
+        <link rel="stylesheet" href="./jubileusz.css" />
+        <title>Jubileusz</title>
+    </head>
+    <body>
+        <!-- Część z logiem, nawigacją i sliderem -->
+        <header>
+            <!-- navbar -->
+            <nav class="navbar nav-container">
+                <div class="logo-container nav-element">
+                    <img src="/images/ezn-logo2048x699.png" alt="logo ezn" class="logo" />
+                </div>
+                <!-- mobile -->
+                <div class="logo-mobile-container">
+                    <img src="/images/ezn-logo1160x699.png" alt="logo ezn" class="logo-mobile" />
+                </div>
+                <!-- end of mobile -->
+                <ul class="menu nav-element">
+                    <li class="menu-item-container">
+                        <p class="menu-item">Aktualności</p>
+                    </li>
+                    <li class="menu-item-container">
+                        <p class="menu-item">Wspomnienia</p>
+                    </li>
+                    <li class="menu-item-container">
+                        <p class="menu-item">Zdjęcia</p>
+                    </li>
+                    <li class="menu-item-container">
+                        <p class="menu-item">Kontakt</p>
+                    </li>
+                </ul>
+                <!-- mobile menu  -->
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </nav>
+            <section class="slider-container">
+                <!-- slider  -->
+                <div class="slider"></div>
+            </section>
+        </header>
 
-    <!-- Kontener dla postów -->
-    <main class="post-container"></main>
+        <!-- Kontener dla postów -->
+        <main class="post-container"></main>
 
-    <script src="/static/scripts/navbar.js"></script>
-  </body>
+        <script src="/static/scripts/navbar.js"></script>
+    </body>
 </html>
