@@ -5,8 +5,17 @@
     --bg-color: #ffffff;
     --main-light: #23b1ae;
     --main-dark: #2a2e40;
+    --white: #ffffffe5;
     --dark-blue: #4154b2;
+    --font-color-light: #ffffffe5;
+    --font-color-dark: #000000;
+    --nav-height: 103px;
 }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
 html,
 body {
@@ -14,6 +23,7 @@ body {
         Helvetica Neue, sans-serif;
 
     font-size: 16px;
+    color: var(--font-color-light);
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -26,4 +36,8 @@ a {
 
 * {
     box-sizing: border-box;
+}
+
+.d-none {
+    display: none;
 }
