@@ -11,10 +11,12 @@ function manageMobileMenu() {
 
 function manageMenuMovement() {
     if (input.checked) {
+        mobileMenu.classList.remove("menu-mobile-shrink");
         mobileMenu.classList.add("menu-mobile-expand");
     }
     if(!input.checked) {
         mobileMenu.classList.remove("menu-mobile-expand");
+        mobileMenu.classList.add("menu-mobile-shrink");
     }
 }
 

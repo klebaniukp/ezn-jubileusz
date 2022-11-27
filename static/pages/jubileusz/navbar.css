@@ -159,7 +159,6 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
     animation-duration: 0.2s;
-    height: 0;
 }
 
 .menu-mobile-expand {
